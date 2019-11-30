@@ -22,7 +22,7 @@
         <!--<div class="clock-block">-->
           <!--<AnalogClock :time=virtualTime size=50 borderWidth=1 scaleType="arabic" handType="line"/>-->
         <!--</div>-->
-        <div class="animal-block">
+        <div class="animal-block Frankie">
           animal block
         </div>
       </div>
@@ -32,9 +32,9 @@
         <div class="button-block">
           <el-badge class="new-alert" :value="taskBacklogCounter[petName].feed" v-if="taskBacklogCounter[petName].feed !== 0">
             <i class="staticButton flash el-icon-knife-fork" @click='interactionButton("feed")'></i>
+            <!--<p class="button-text">Feed</p>-->
           </el-badge>
           <i class="staticButton el-icon-knife-fork" v-if="taskBacklogCounter[petName].feed === 0" @click='interactionButton("feed")'></i>
-            <!--<p>{{taskBacklogCounter.feed}}</p>-->
         </div>
         <div class="button-block">
           <el-badge class="new-alert" :value="taskBacklogCounter[petName].play" v-if="taskBacklogCounter[petName].play !== 0">
@@ -196,9 +196,12 @@ export default {
     float: right;
     border: 1px solid;
   }
+  .Frankie {
+    background: url('../assets/dog-image-example-removebg.jpeg') no-repeat;
+  }
   .animal-block {
     border: 1px solid;
-    background: url('../assets/dog-image-example-removebg.jpeg') no-repeat;
+    /*background: url('../assets/dog-image-example-removebg.jpeg') no-repeat;*/
     position: absolute;
     left: 60px;
     right: 60px;
