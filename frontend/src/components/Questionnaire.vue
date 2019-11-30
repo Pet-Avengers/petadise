@@ -11,7 +11,7 @@
           <div class="questionnaire" v-if="showQuestionnaireSwitch">
             <div v-for="(value, key) in questionnaire">
               <p>{{value.question}}</p>
-              <el-checkbox-group v-model="answer[key]" v-for="(item, i) in value.choices" class="checkbox">
+              <el-checkbox-group v-model="answer[key]" v-for="(item, _) in value.choices" class="checkbox">
                 <el-checkbox :label="item"></el-checkbox>
               </el-checkbox-group>
             </div>
