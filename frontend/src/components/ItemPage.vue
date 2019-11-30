@@ -10,11 +10,24 @@
         <p>🌸Pick the food for xx!🌸</p>
       </div>
       <div class="items-block">
-        <!--<p>{{taskBacklogCounter[petName].feed}}</p>-->
-        <div class="item-1" @click="chooseItem(1)"></div>
-        <div class="item-2" @click="chooseItem(2)"></div>
-        <div class="item-3" @click="chooseItem(3)"></div>
-        <div class="item-4" @click="chooseItem(4)"></div>
+        <div v-if="type === 'feed'">
+          <div class="item-1 food-1" @click="chooseItem(1)"></div>
+          <div class="item-2 food-2" @click="chooseItem(2)"></div>
+          <div class="item-3 food-3" @click="chooseItem(3)"></div>
+          <div class="item-4 food-4" @click="chooseItem(4)"></div>
+        </div>
+        <div v-if="type === 'play'">
+          <div class="item-1 play-1" @click="chooseItem(1)"></div>
+          <div class="item-2 play-2" @click="chooseItem(2)"></div>
+          <div class="item-3 play-3" @click="chooseItem(3)"></div>
+          <div class="item-4 play-4" @click="chooseItem(4)"></div>
+        </div>
+        <div v-if="type === 'walk'">
+          <div class="item-1 walk-1" @click="chooseItem(1)"></div>
+          <div class="item-2 walk-2" @click="chooseItem(2)"></div>
+          <div class="item-3 walk-3" @click="chooseItem(3)"></div>
+          <div class="item-4 walk-4" @click="chooseItem(4)"></div>
+        </div>
       </div>
     </div>
     <div class="footer">
@@ -117,29 +130,61 @@ export default {
   .items-block {
     border: 1px solid;
   }
+  .food-1 {
+    background: url('../assets/dog-food-image-example.jpg') no-repeat center;
+  }
+  .food-2 {
+    background: url('../assets/dog-food-image-example.jpg') no-repeat center;
+  }
+  .food-3 {
+    background: url('../assets/dog-food-image-example.jpg') no-repeat center;
+  }
+  .food-4 {
+    background: url('../assets/dog-food-image-example.jpg') no-repeat center;
+  }
+  .play-1 {
+    background: url('../assets/dog-play-image-example.jpg') no-repeat center;
+  }
+  .play-2 {
+    background: url('../assets/dog-play-image-example.jpg') no-repeat center;
+  }
+  .play-3 {
+    background: url('../assets/dog-play-image-example.jpg') no-repeat center;
+  }
+  .play-4 {
+    background: url('../assets/dog-play-image-example.jpg') no-repeat center;
+  }
+  .walk-1 {
+    background: url('../assets/dog-walk-image-example.jpg') no-repeat center;
+  }
+  .walk-2 {
+    background: url('../assets/dog-walk-image-example.jpg') no-repeat center;
+  }
+  .walk-3 {
+    background: url('../assets/dog-walk-image-example.jpg') no-repeat center;
+  }
+  .walk-4 {
+    background: url('../assets/dog-walk-image-example.jpg') no-repeat center;
+  }
   .item-1 {
     width: 50%;
     height: 165px;
-    background: url('../assets/dog-food-image-example.jpg') no-repeat center;
     float: left;
   }
   .item-2 {
     width: 50%;
     height: 165px;
-    background: url('../assets/dog-food-image-example.jpg') no-repeat center;
     float: left;
   }
   .item-3 {
     width: 50%;
     height: 165px;
-    background: url('../assets/dog-food-image-example.jpg') no-repeat center;
     float: left;
     clear: left;
   }
   .item-4 {
     width: 50%;
     height: 165px;
-    background: url('../assets/dog-food-image-example.jpg') no-repeat center;
     float: left;
   }
   .button-block {
