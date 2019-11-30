@@ -10,8 +10,7 @@
         "unit": "jest --config test/unit/jest.conf.js --coverage",
         "e2e": "node test/e2e/runner.js",
         "test": "test succeed",
-        "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-        "build": "build succeed"
+        "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs"
     },
     "dependencies": {
         "axios": "^0.19.0",
