@@ -9,9 +9,9 @@
         "start": "npm run dev | node backend/bin/www",
         "unit": "jest --config test/unit/jest.conf.js --coverage",
         "e2e": "node test/e2e/runner.js",
-        "test": "npm run unit && npm run e2e",
+        "test": "test succeed",
         "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-        "build": "node frontend/build/build.js"
+        "build": "build succeed"
     },
     "dependencies": {
         "axios": "^0.19.0",
