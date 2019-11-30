@@ -5,12 +5,7 @@
     "author": "Wan W. <wanw@andrew.cmu.edu>",
     "private": true,
     "scripts": {
-        "dev": "webpack-dev-server --inline --progress --config frontend/build/webpack.dev.conf.js",
-        "start": "npm run dev | node backend/bin/www",
-        "unit": "jest --config test/unit/jest.conf.js --coverage",
-        "e2e": "node test/e2e/runner.js",
-        "test": "test succeed",
-        "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs"
+        "start": "npm run dev | node backend/bin/www"
     },
     "dependencies": {
         "axios": "^0.19.0",
