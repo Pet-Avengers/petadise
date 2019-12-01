@@ -199,9 +199,6 @@ export default {
     float: right;
     /* border: 1px solid; */
   }
-  .Frankie {
-    background: url('../assets/dog-image-example-removebg.jpeg') no-repeat;
-  }
   .animal-block {
 
     /* border: 1px solid; */
