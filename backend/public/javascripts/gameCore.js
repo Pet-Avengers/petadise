@@ -180,7 +180,7 @@ function generateReportSuggestion(uniqueId, petNames) {
   if (notEnoughPetNames.length > 0) {
     suggestion += " Your interaction with " + "[" + notEnoughPetNames.toString() + "]" + " is/are not over " + interactionThreshold + ".";
   }
-  suggestion += " Do you want to generate the match rate report?";
+  suggestion += " Do you want to finish the game and generate the match rate report?";
   return suggestion;
 }
 

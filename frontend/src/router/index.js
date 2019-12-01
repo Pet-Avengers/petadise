@@ -8,6 +8,7 @@ import MatchRateReport from '@/components/MatchRateReport'
 import Welcome from '@/components/Welcome'
 import Login from '@/components/Login'
 import Questionnaire from '@/components/Questionnaire'
+import PetInfo from '@/components/PetInfo'
 
 Vue.use(Router)
 
@@ -51,6 +52,11 @@ export default new Router({
       path: '/Questionnaire',
       name: 'Questionnaire',
       component: Questionnaire
+    },
+    {
+      path: '/PetInfo',
+      name: 'PetInfo',
+      component: PetInfo
     },
     // {
     //   path: '/',

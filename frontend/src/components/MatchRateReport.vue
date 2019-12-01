@@ -10,7 +10,7 @@
       <div class="info-block" v-for="(_, petName) in report">
         <div class="more-info-out">
           <div class="more-info-in">
-            <i class="more-info-icon el-icon-document"></i>
+            <i class="more-info-icon el-icon-document" @click="petInfoButton(petName)"></i>
             <p class="more-info-text">More Info</p>
             <!--<el-button type="primary" size="small">More Info</el-button>-->
           </div>
@@ -49,6 +49,11 @@ export default {
       description_line2: 'The higher the rate is, the more likely the pet is to be your best partner.',
       // report: this.$route.params.report,
       report: {'Frankie': 4, 'Mikky': 3.8, 'lsl': 2, 'sdfs': 3},
+    }
+  },
+  methods: {
+    petInfoButton: function(petName) {
+      this.$router.replace({name: 'PetInfo', params: {petName: petName, report: this.report}})
     }
   },
   mounted: function () {
