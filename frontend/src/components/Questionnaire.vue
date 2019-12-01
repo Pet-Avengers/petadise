@@ -4,7 +4,7 @@
     <div class="main">
       <div class="main-canvas">
         <div class="title">
-          <p>Help us know more about you</p>
+          <h4>Help us know more about you</h4>
         </div>
         <div class="questionnaire-block">
           <p v-if="!showQuestionnaireSwitch">{{explanation}}</p>
@@ -82,8 +82,8 @@ export default {
 </script>
 
 <style scoped>
-  .main {
-    background-color: #B3C0D1;
+  .footer {
+    height: 100px;
   }
   .main-canvas {
     /*border: 1px solid;*/
@@ -95,7 +95,8 @@ export default {
     bottom: 50px;
   }
   .title {
-    border: 1px solid;
+    /* border: 1px solid; */
+    line-height:50%;
   }
   .questionnaire-block {
     /*border: 1px solid;*/
@@ -106,7 +107,7 @@ export default {
   .checkbox {
     display: inline-grid;
     width: 80px;
-
   }
+
 
 </style>

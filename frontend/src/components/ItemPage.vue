@@ -6,7 +6,7 @@
         <el-avatar class="avatar" shape="square" :size="100" :src="squareUrl"></el-avatar>
         <p>tips: {{tips}}</p>
       </div>
-      <div style="border: 1px solid">
+      <div>
         <p>🌸Pick the food for xx!🌸</p>
       </div>
       <div class="items-block">
@@ -121,14 +121,14 @@ export default {
     margin-bottom: 10px;
   }
   .tips-block {
-    border: 1px solid;
+    /* border: 1px solid; */
     /*These two to make the tips block the same line with the clock block*/
     display: inline-block;
     width: 100%;
     height: 120px;
   }
   .items-block {
-    border: 1px solid;
+    /* border: 1px solid; */
   }
   .food-1 {
     background: url('../assets/dog-food-image-example.jpg') no-repeat center;
@@ -188,14 +188,14 @@ export default {
     float: left;
   }
   .button-block {
-    border: 1px solid;
+    /* border: 1px solid; */
     margin-top: 30px;
     font-size: 60px;
     /*line-height:100px;*/
   }
   .backButton {
-    border: 1px solid;
-    color: white;
+    /* border: 1px solid; */
+    color: #E6B8AF;
     border-radius: 50%;
   }
   .footer {
