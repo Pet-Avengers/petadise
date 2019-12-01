@@ -36,5 +36,14 @@ function getPetCandidates(questionnaire) {
   return petNamesAndInfo;
 }
 
+function getPetDescription(petName) {
+  if (!(petName in petInfo)) {
+    return '';
+  } else {
+    return petInfo[petName].description;
+  }
+}
+
 exports.generateQuestionnaire = generateQuestionnaire;
 exports.getPetCandidates = getPetCandidates;
+exports.getPetDescription = getPetDescription;
