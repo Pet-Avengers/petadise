@@ -7,7 +7,7 @@
           <div class="picture-in"></div>
         </div>
         <div class="name">
-          <p class="text">{{item.petName}}</p>
+          <h4 class="text">{{item.petName}}</h4>
         </div>
         <div class="intro">
           <p>{{item.intro}}</p>

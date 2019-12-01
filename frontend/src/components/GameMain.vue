@@ -11,7 +11,7 @@
       </el-tabs>
       <div class="main-canvas">
         <div class="happiness-block">
-          <span>Happiness</span>
+          <span data-v-30903f7b="" class="heart">♥</span>
           <div class="happiness-bar">
             <el-progress :percentage=happinessValue[petName] :text-inside="true" :stroke-width="26" />
           </div>
@@ -23,7 +23,6 @@
           <!--<AnalogClock :time=virtualTime size=50 borderWidth=1 scaleType="arabic" handType="line"/>-->
         <!--</div>-->
         <div class="animal-block Frankie">
-          animal block
         </div>
       </div>
     </div>
@@ -165,10 +164,10 @@ export default {
   }
   .main {
     bottom: 150px;
-    border: 1px solid;
+    /* border: 1px solid; */
   }
   .main-canvas {
-    border: 1px solid;
+    /* border: 1px solid; */
     background: url('../assets/home-inside-example.png') no-repeat;
     position: absolute;
     left: 10px;
@@ -180,28 +179,31 @@ export default {
     margin-top: 10px;
   }
   .happiness-bar {
-    width: 70%;
+    width: 80%;
     /*To make "Happiness" and the bar in the same line*/
     display: inline-block;
   }
   .discovery-block {
-    border: 1px solid;
+    /* border: 1px solid; */
     /*These two to make the discovery block the same line with the clock block*/
     display: inline-block;
     width: 70%;
     height: 100px;
+    background: rgb(230, 184, 175);
+    background: rgba(230, 184, 175, 0.5);
+    border-radius: 20px !important;
+    margin: 10px;
   }
   .clock-block {
     margin-right: 10px;
     float: right;
-    border: 1px solid;
-  }
-  .Frankie {
-    background: url('../assets/dog-image-example-removebg.jpeg') no-repeat;
+    /* border: 1px solid; */
   }
   .animal-block {
-    border: 1px solid;
-    /*background: url('../assets/dog-image-example-removebg.jpeg') no-repeat;*/
+
+    /* border: 1px solid; */
+    background: url('../assets/cat.png') no-repeat;
+
     position: absolute;
     left: 60px;
     right: 60px;
@@ -209,14 +211,14 @@ export default {
     bottom: 50px;
   }
   .buttons-block {
-    border: 1px solid;
+    /* border: 1px solid; */
     /*This line + generate-report-block.line-height + generate-report-block.margin-bottom=.footer.line-height*/
     line-height:100px;
     /*display: flex + flex: 1 to evenly separate block into 3*/
     display: flex;
   }
   .button-block {
-    border: 1px solid;
+    /* border: 1px solid; */
     /*font-size to make the icon larger*/
     font-size: 60px;
     flex: 1;
@@ -226,9 +228,9 @@ export default {
     margin-bottom: 10px;
   }
   @-webkit-keyframes flashAnimation {
-    from { background-color: #1E90FF; -webkit-box-shadow: 0 0 0px #333; }
-    50% { background-color: #63B8FF; -webkit-box-shadow: 0 0 40px #63B8FF; }
-    to { background-color: #1E90FF; -webkit-box-shadow: 0 0 0px #333; }
+    from { background-color: #E6B8AF; -webkit-box-shadow: 0 0 0px #e16c77; }
+    50% { background-color: #e16c77; -webkit-box-shadow: 0 0 40px #e16c77; }
+    to { background-color: #E6B8AF; -webkit-box-shadow: 0 0 0px #e16c77; }
   }
   .flash {
     /*border: 0px solid;*/
@@ -242,15 +244,30 @@ export default {
     border: 0px solid;
     color: white;
     border-radius: 50%;
-    background-color: #1E90FF;
+    background-color: #E6B8AF;
   }
   .new-alert {
     /*to make it on the top right*/
     line-height: 0px;
-    border: 1px solid;
+    /* border: 1px solid; */
   }
   .footer {
     height:150px;
   /*border: 1px solid;*/
   }
+
+  #page-wraper {
+    /* background: url(../images/page-bg.jpg) no-repeat center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+  }
+
+  span.heart {
+    color: #f26471;
+    font-size: 23px;
+  } 
+
 </style>

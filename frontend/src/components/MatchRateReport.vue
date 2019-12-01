@@ -26,7 +26,8 @@
             v-model="report[petName]"
             disabled
             show-score
-            text-color="#ff9900">
+            text-color="#a43f49" 
+          >
           </el-rate>
         </div>
       </div>
@@ -63,6 +64,7 @@ export default {
 <style scoped>
   .tips-block {
     /*border: 1px solid;*/
+    color: #3B5257; 
     display: inline-block;
     width: 95%;
     height: auto;
@@ -97,7 +99,9 @@ export default {
     text-align: left;
     /*width: 50%;*/
   }
-  .pet-name-text {}
+  .pet-name-text {
+    color:#4f2024;
+  }
   .score {
     /*border: 1px solid;*/
     height: 30px;
@@ -120,10 +124,17 @@ export default {
   }
   .more-info-text {
     margin: 0px;
+    color: #a43f49;
   }
+  
   .more-info-icon {
     font-size: 30px;
   }
+
+    .el-icon-document {
+    color: #a43f49
+  }
+
   /*.button-block {*/
     /*border: 1px solid;*/
     /*!*margin-top: 30px;*!*/
